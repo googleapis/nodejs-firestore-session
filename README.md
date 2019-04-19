@@ -1,0 +1,69 @@
+<img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Inc. logo" title="Google" align="right" height="96" width="96"/>
+
+# Google Cloud Firestore Sessions
+
+[![NPM][1]][2]
+
+[1]: https://img.shields.io/npm/v/@google-cloud/connect-firestore.svg?style=flat
+[2]: https://www.npmjs.org/package/@google-cloud/connect-firestore
+
+**@google-cloud/connect-firestore** is a [Google Cloud Firestore][firestore]
+session store backed by [@google-cloud/firestore][firestore_lib].
+
+**Note:** Cloud Firestore is a persistent, distributed, transactional database.
+Often, it's more appropriate to choose a different storage solution for sessions
+such as Memcache or Redis as their designs offer much faster operation in this
+use case.
+
+## Installation
+
+    npm install @google-cloud/connect-firestore
+
+## Configuration
+
+You must have a Google Cloud project and credentials.
+
+See [gcloud node's documentation][auth] on setting up authentication.
+
+## Usage Example
+
+```javascript
+const Firestore = require('@google-cloud/firestore');
+const express = require('express');
+const session = require('express-session');
+const app = express();
+
+const FirestoreStore = require('@google-cloud/connect-firestore')(session);
+
+app.use(session({
+  store: new FirestoreStore({
+    dataset: new Firestore({
+      kind: 'express-sessions',
+
+      // For convenience, @google-cloud/firestore automatically looks for the
+      // GCLOUD_PROJECT environment variable. Or you can explicitly pass in a
+      // project ID here:
+      projectId: 'YOUR_PROJECT_ID' || process.env.GCLOUD_PROJECT,
+
+      // For convenience, @google-cloud/firestore automatically looks for the
+      // GOOGLE_APPLICATION_CREDENTIALS environment variable. Or you can
+      // explicitly pass in that path to your key file here:
+      keyFilename: '/path/to/keyfile.json' || process.env.GOOGLE_APPLICATION_CREDENTIALS
+    })
+  }),
+  secret: 'my-secret'
+}));
+```
+
+## Contributing
+
+* See [CONTRIBUTING.md](https://github.com/googleapis/nodejs-firestore-session/blob/master/CONTRIBUTING.md)
+
+## License
+
+* Apache 2.0 - See [LICENSE](https://github.com/googleapis/nodejs-firestore-session/blob/master/LICENSE)
+
+[express]: http://expressjs.com/
+[firestore]: https://cloud.google.com/firestore/docs
+[firestore_lib]: https://www.npmjs.com/package/@google-cloud/firestore
+[auth]: https://cloud.google.com/docs/authentication/getting-started
