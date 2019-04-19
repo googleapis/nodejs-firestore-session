@@ -22,30 +22,31 @@ module.exports = function(session) {
     constructor(options) {
       options = options || {};
       super(options);
-      this.ds = options.dataset;
-      if (!this.ds) {
+      this.db = options.dataset;
+      if (!this.db) {
         throw new Error('No dataset provided to Firestore Session.');
       }
       this.kind = options.kind || 'Session';
     }
 
     get(sid, callback) {
-      this.ds.get(this.ds.key([this.kind, sid]), (err, entity) => {
-        if (err) {
-          return callback(err);
-        }
-        if (!entity) {
-          return callback();
-        }
+      this.db
+        .collection(this.kind)
+        .doc(sid)
+        .get()
+        .then(doc => {
+          if (!doc.exists) {
+            return callback();
+          }
 
-        let result;
-        try {
-          result = JSON.parse(entity.data);
-        } catch (er) {
-          return callback(er);
-        }
-        return callback(null, result);
-      });
+          try {
+            const result = JSON.parse(doc.data().data);
+            return callback(null, result);
+          } catch (err) {
+            return callback(err);
+          }
+        })
+        .catch(err => callback(err));
     }
 
     set(sid, sess, callback) {
@@ -58,23 +59,19 @@ module.exports = function(session) {
         return callback(err);
       }
 
-      this.ds.save(
-        {
-          key: this.ds.key([this.kind, sid]),
-          data: [
-            {
-              name: 'data',
-              value: sessJson,
-              excludeFromIndexes: true,
-            },
-          ],
-        },
-        callback
-      );
+      this.db
+        .collection(this.kind)
+        .doc(sid)
+        .set({data: sessJson});
+      callback();
     }
 
-    destroy(sid, fn) {
-      this.ds.delete(this.ds.key([this.kind, sid]), fn);
+    destroy(sid, callback) {
+      this.db
+        .collection(this.kind)
+        .doc(sid)
+        .delete();
+      callback();
     }
   }
   return FirestoreStore;
