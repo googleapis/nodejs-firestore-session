@@ -8,10 +8,10 @@
 
 > An [express](http://expressjs.com/) session store backed by [Google Cloud Firestore][product-docs].
 
-**@google-cloud/connect-firestore** is a [Google Cloud Firestore][product-docs]
-session store backed by [@google-cloud/firestore][firestore_lib].
+**@google-cloud/connect-firestore** is an [express](http://expressjs.com/)
+session store backed by [Google Cloud Firestore][product-docs].
 
-**note** Cloud Firestore is a persistent, distributed, transactional database.
+**Note**: Cloud Firestore is a persistent, distributed, transactional database.
 Often, it's more appropriate to choose a different storage solution for sessions
 such as Memcache or Redis as their designs offer much faster operation in this
 use case.
