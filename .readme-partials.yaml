@@ -1,3 +1,5 @@
+title: |-
+    # [Google Cloud Firestore Session](https://github.com/googleapis/nodejs-firestore-session)
 introduction: |-
     > An [express](http://expressjs.com/) session store backed by [Google Cloud Firestore][product-docs].
 
