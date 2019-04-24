@@ -1,0 +1,13 @@
+{
+  "name": "firestore-session",
+  "name_pretty": "Google Cloud Firestore Session",
+  "product_documentation": "https://cloud.google.com/firestore",
+  "client_documentation": "https://cloud.google.com/nodejs/docs/reference/firestore-session/latest/",
+  "issue_tracker": "https://issuetracker.google.com/savedsearches/5337669",
+  "release_level": "beta",
+  "language": "nodejs",
+  "repo": "googleapis/nodejs-firestore-session",
+  "distribution_name": "@google-cloud/firestore-session",
+  "api_id": "firestore.googleapis.com",
+  "requires_billing": false
+}

@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+ // [START firestore_quickstart]
 const {Firestore} = require('@google-cloud/firestore');
 const express = require('express');
 const session = require('express-session');
@@ -44,3 +45,4 @@ app.get('/', (req, res) => {
 app.listen(4830, () => {
   console.log(`Example app listening on port 4830!`);
 });
+// [END firestore_quickstart]
