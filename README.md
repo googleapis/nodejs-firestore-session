@@ -2,7 +2,8 @@
 [//]: # "To regenerate it, use `python -m synthtool`."
 <img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
 
-# [Google Cloud Firestore Session: Node.js Client](https://github.com/googleapis/nodejs-firestore-session)
+# [Google Cloud Firestore Session](https://github.com/googleapis/nodejs-firestore-session)
+
 
 [![release level](https://img.shields.io/badge/release%20level-beta-yellow.svg?style=flat)](https://cloud.google.com/terms/launch-stages)
 [![npm version](https://img.shields.io/npm/v/@google-cloud/connect-firestore.svg)](https://www.npmjs.org/package/@google-cloud/connect-firestore)
