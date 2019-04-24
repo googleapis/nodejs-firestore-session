@@ -13,104 +13,105 @@
  * limitations under the License.
  */
 
-'use strict';
+import {Firestore} from '@google-cloud/firestore';
+import * as assert from 'assert';
 
-const assert = require('assert');
-const session = require('express-session');
-
-const FirestoreStore = require('../src/index')(session);
+import {FirestoreStore} from '../src/index';
 
 it('should throw without dataset', done => {
-  assert.throws(() => new FirestoreStore());
+  // tslint:disable-next-line no-any
+  assert.throws(() => new (FirestoreStore as any)());
   done();
 });
 
 it('should use the default kind', done => {
-  const fakeDataset = {};
-  fakeDataset.collection = kind => {
-    assert.strictEqual(kind, 'Session');
-    done();
-  };
-
+  const fakeDataset = ({
+    collection: (kind: string) => {
+      assert.strictEqual(kind, 'Session');
+      done();
+    },
+  } as {}) as Firestore;
   const store = new FirestoreStore({dataset: fakeDataset});
-  store.get();
+  store.get('', assert.ifError);
 });
 
 it('should use the provided kind', done => {
   const expectedkind = 'providedKind';
-  const fakeDataset = {};
-  fakeDataset.collection = kind => {
-    assert.strictEqual(kind, expectedkind);
-    done();
-  };
-
+  const fakeDataset = {
+    collection: (kind: string) => {
+      assert.strictEqual(kind, expectedkind);
+      done();
+    },
+  } as Firestore;
   const store = new FirestoreStore({
     dataset: fakeDataset,
     kind: expectedkind,
   });
-  store.get();
+  store.get('', assert.ifError);
 });
 
 it('should get a document', done => {
-  const fakeDataset = {
-    collection: kind => {
+  const fakeDataset = ({
+    collection: (kind: string) => {
       assert.strictEqual(kind, 'Session');
       return fakeDataset;
     },
-    doc: sid => {
+    doc: (sid: string) => {
       assert.strictEqual(sid, expectedSid);
       return fakeDataset;
     },
     get: () => {
       done();
     },
-  };
+  } as {}) as Firestore;
 
   const store = new FirestoreStore({
     dataset: fakeDataset,
   });
 
   const expectedSid = 'sid';
-  store.get(expectedSid);
+  store.get(expectedSid, err => {
+    assert.ifError(err);
+  });
 });
 
 it('should set a document', done => {
-  const fakeDataset = {
-    collection: kind => {
+  const fakeDataset = ({
+    collection: (kind: string) => {
       assert.strictEqual(kind, 'Session');
       return fakeDataset;
     },
-    doc: sid => {
+    doc: (sid: string) => {
       assert.strictEqual(sid, expectedSid);
       return fakeDataset;
     },
     set: () => {
       done();
     },
-  };
+  } as {}) as Firestore;
 
   const store = new FirestoreStore({
     dataset: fakeDataset,
   });
 
   const expectedSid = 'sid';
-  store.set(expectedSid);
+  store.set(expectedSid, {} as Express.SessionData, assert.ifError);
 });
 
 it('should destroy a document', done => {
-  const fakeDataset = {
-    collection: kind => {
+  const fakeDataset = ({
+    collection: (kind: string) => {
       assert.strictEqual(kind, 'Session');
       return fakeDataset;
     },
-    doc: sid => {
+    doc: (sid: string) => {
       assert.strictEqual(sid, expectedSid);
       return fakeDataset;
     },
     delete: () => {
       done();
     },
-  };
+  } as {}) as Firestore;
 
   const store = new FirestoreStore({
     dataset: fakeDataset,
