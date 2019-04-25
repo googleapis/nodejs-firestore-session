@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
- // [START firestore_quickstart]
+// [START firestore_quickstart]
 const {Firestore} = require('@google-cloud/firestore');
 const express = require('express');
 const session = require('express-session');
