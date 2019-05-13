@@ -25,7 +25,7 @@
     "docs": "jsdoc -c .jsdoc.js",
     "test": "nyc mocha",
     "fix": "eslint --fix '**/*.js'",
-    "docs-test": "linkinator docs -r --skip www.googleapis.com",
+    "docs-test": "linkinator docs -r --skip www.npmjs.com",
     "predocs-test": "npm run docs"
   },
   "devDependencies": {
