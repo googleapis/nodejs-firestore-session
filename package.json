@@ -27,7 +27,7 @@
     "docs": "jsdoc -c .jsdoc.js",
     "test": "nyc mocha build/test",
     "fix": "gts fix && eslint --fix '**/*.js'",
-    "docs-test": "linkinator docs -r --skip www.googleapis.com",
+    "docs-test": "linkinator docs -r --skip www.npmjs.org",
     "predocs-test": "npm run docs",
     "clean": "gts clean",
     "compile": "tsc -p .",
