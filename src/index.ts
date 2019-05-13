@@ -42,7 +42,6 @@ export class FirestoreStore extends Store {
       .doc(sid)
       .get()
       .then(doc => {
-        console.log(doc);
         if (!doc.exists) {
           return callback();
         }
@@ -73,8 +72,10 @@ export class FirestoreStore extends Store {
     this.db
       .collection(this.kind)
       .doc(sid)
-      .set({data: sessJson});
-    callback();
+      .set({data: sessJson})
+      .then(() => {
+        callback!();
+      });
   };
 
   destroy = (sid: string, callback?: (err?: Error) => void) => {

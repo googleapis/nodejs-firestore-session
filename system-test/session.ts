@@ -45,7 +45,7 @@ describe('system tests', () => {
   it('Should destroy a session', done => {
     store.destroy('123', err => {
       assert.ifError(err);
-      assert.strictEqual(err, null);
+      assert.strictEqual(err, undefined);
       store.get('123', (err, session) => {
         assert.ifError(err);
         assert.strictEqual(session, undefined);
