@@ -5,3 +5,5 @@ coverage
 docs/
 __pycache__
 .coverage
+build
+.vscode
