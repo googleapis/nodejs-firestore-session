@@ -22,14 +22,6 @@ cd $(dirname $0)/..
 
 npm install
 npm test
+./node_modules/nyc/bin/nyc.js report
 
-COVERAGE_NODE=10
-if npx check-node-version@3.3.0 --silent --node $COVERAGE_NODE; then
-  NYC_BIN=./node_modules/nyc/bin/nyc.js
-  if [ -f "$NYC_BIN" ]; then
-    $NYC_BIN report
-  fi
-  bash $KOKORO_GFILE_DIR/codecov.sh
-else
-  echo "coverage is only reported for Node $COVERAGE_NODE"
-fi
+bash $KOKORO_GFILE_DIR/codecov.sh
