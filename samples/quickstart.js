@@ -19,7 +19,7 @@ const express = require('express');
 const session = require('express-session');
 const app = express();
 
-const FirestoreStore = require('@google-cloud/connect-firestore')(session);
+const {FirestoreStore} = require('@google-cloud/connect-firestore');
 
 app.use(
   session({
