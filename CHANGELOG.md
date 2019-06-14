@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+### [1.0.2](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.1...v1.0.2) (2019-06-14)
+
+
+### Bug Fixes
+
+* **docs:** move to new client docs URL ([#40](https://www.github.com/googleapis/nodejs-firestore-session/issues/40)) ([241bb6f](https://www.github.com/googleapis/nodejs-firestore-session/commit/241bb6f))
+
 ### [1.0.1](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.0...v1.0.1) (2019-06-06)
 
 
