@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+### [1.0.4](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.3...v1.0.4) (2019-11-14)
+
+
+### Bug Fixes
+
+* **docs:** add jsdoc-region-tag plugin ([#66](https://www.github.com/googleapis/nodejs-firestore-session/issues/66)) ([23a9b82](https://www.github.com/googleapis/nodejs-firestore-session/commit/23a9b82d607ae97cfe2be76a5a2a1888c211f3d2))
+
 ### [1.0.3](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.2...v1.0.3) (2019-06-26)
 
 
