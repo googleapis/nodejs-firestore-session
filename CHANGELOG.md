@@ -4,6 +4,14 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+### [1.0.5](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.4...v1.0.5) (2019-12-05)
+
+
+### Bug Fixes
+
+* **deps:** pin TypeScript below 3.7.0 ([d7cc073](https://www.github.com/googleapis/nodejs-firestore-session/commit/d7cc07310eb30af04d754b2ba79e6ae56baefa83))
+* **docs:** bump release level to GA ([#72](https://www.github.com/googleapis/nodejs-firestore-session/issues/72)) ([7da3ab1](https://www.github.com/googleapis/nodejs-firestore-session/commit/7da3ab12b357d5d4065081ddca3227e6e7df3dc6))
+
 ### [1.0.4](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.3...v1.0.4) (2019-11-14)
 
 
