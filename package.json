@@ -25,7 +25,7 @@
     "presystem-test": "npm run compile",
     "system-test": "mocha build/system-test -t 10000",
     "docs": "compodoc src/",
-    "test": "nyc mocha build/test",
+    "test": "c8 mocha build/test",
     "fix": "gts fix && eslint --fix '**/*.js'",
     "docs-test": "linkinator docs",
     "predocs-test": "npm run docs",
@@ -48,7 +48,7 @@
     "gts": "^1.0.0",
     "linkinator": "^1.5.0",
     "mocha": "^6.0.0",
-    "nyc": "^14.0.0",
+    "c8": "^7.0.0",
     "prettier": "^1.14.3",
     "typescript": "3.6.4"
   }
