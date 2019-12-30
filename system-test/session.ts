@@ -14,6 +14,7 @@
 
 import {Firestore} from '@google-cloud/firestore';
 import * as assert from 'assert';
+import {describe, it} from 'mocha';
 import {FirestoreStore} from '../src';
 
 const store = new FirestoreStore({
