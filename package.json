@@ -38,7 +38,7 @@
     "@compodoc/compodoc": "^1.1.9",
     "@google-cloud/firestore": "^3.0.0",
     "@types/express-session": "^1.15.12",
-    "@types/mocha": "^5.2.6",
+    "@types/mocha": "^7.0.0",
     "eslint": "^6.0.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^11.0.0",
