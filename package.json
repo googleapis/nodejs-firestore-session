@@ -33,7 +33,7 @@
     "compile": "tsc -p .",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
-    "prelint": "cd samples; npm link ../"
+    "prelint": "cd samples; npm link ../; npm i"
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.9",
