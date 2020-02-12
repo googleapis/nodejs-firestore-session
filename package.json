@@ -32,7 +32,8 @@
     "clean": "gts clean",
     "compile": "tsc -p .",
     "prepare": "npm run compile",
-    "pretest": "npm run compile"
+    "pretest": "npm run compile",
+    "prelint": "cd samples; npm link ../"
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.9",
