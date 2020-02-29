@@ -31,16 +31,19 @@ module.exports = {
   source: {
     excludePattern: '(^|\\/|\\\\)[._]',
     include: [
-      'build/src'
+      'build/src',
     ],
     includePattern: '\\.js$'
   },
   templates: {
-    copyright: 'Copyright 2018 Google, LLC.',
+    copyright: 'Copyright 2019 Google, LLC.',
     includeDate: false,
     sourceFiles: false,
     systemName: '@google-cloud/connect-firestore',
-    theme: 'lumen'
+    theme: 'lumen',
+    default: {
+      outputSourceFiles: false
+    }
   },
   markdown: {
     idInHeadings: true
