@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+### [1.0.7](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.6...v1.0.7) (2020-04-13)
+
+
+### Bug Fixes
+
+* apache license URL ([#468](https://www.github.com/googleapis/nodejs-firestore-session/issues/468)) ([#116](https://www.github.com/googleapis/nodejs-firestore-session/issues/116)) ([97470bf](https://www.github.com/googleapis/nodejs-firestore-session/commit/97470bf0e6811b608a64a0fae732c5d846887a9f))
+
 ### [1.0.6](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.5...v1.0.6) (2019-12-31)
 
 
