@@ -23,9 +23,8 @@ const {FirestoreStore} = require('@google-cloud/connect-firestore');
 app.use(
   session({
     store: new FirestoreStore({
-      dataset: new Firestore({
-        kind: 'express-sessions',
-      }),
+      dataset: new Firestore(),
+      kind: 'express-sessions',
     }),
     secret: 'my-secret',
     resave: false,
