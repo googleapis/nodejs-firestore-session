@@ -23,6 +23,9 @@ such as Memcache or Redis as their designs offer much faster operation in this
 use case.
 
 
+A comprehensive list of changes in each version may be found in
+[the CHANGELOG](https://github.com/googleapis/nodejs-firestore-session/blob/master/CHANGELOG.md).
+
 * [Google Cloud Firestore Session Node.js Client API Reference][client-docs]
 * [Google Cloud Firestore Session Documentation][product-docs]
 * [github.com/googleapis/nodejs-firestore-session](https://github.com/googleapis/nodejs-firestore-session)
