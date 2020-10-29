@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/nodejs-firestore-session.git",
-        "sha": "63580348838622f4d9420089bc298b4f382466d2"
+        "sha": "6cad815f8e9f1347f8f63718a1ff6f6fd60a5ce2"
       }
     },
     {
@@ -14,5 +14,60 @@
         "sha": "be74d3e532faa47eb59f1a0eaebde0860d1d8ab4"
       }
     }
+  ],
+  "generatedFiles": [
+    ".eslintignore",
+    ".eslintrc.json",
+    ".github/ISSUE_TEMPLATE/bug_report.md",
+    ".github/ISSUE_TEMPLATE/feature_request.md",
+    ".github/ISSUE_TEMPLATE/support_request.md",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/publish.yml",
+    ".github/release-please.yml",
+    ".github/workflows/ci.yaml",
+    ".kokoro/common.cfg",
+    ".kokoro/continuous/node10/common.cfg",
+    ".kokoro/continuous/node10/docs.cfg",
+    ".kokoro/continuous/node10/lint.cfg",
+    ".kokoro/continuous/node10/samples-test.cfg",
+    ".kokoro/continuous/node10/system-test.cfg",
+    ".kokoro/continuous/node10/test.cfg",
+    ".kokoro/continuous/node12/common.cfg",
+    ".kokoro/continuous/node12/test.cfg",
+    ".kokoro/continuous/node8/common.cfg",
+    ".kokoro/continuous/node8/test.cfg",
+    ".kokoro/docs.sh",
+    ".kokoro/lint.sh",
+    ".kokoro/presubmit/node10/common.cfg",
+    ".kokoro/presubmit/node10/docs.cfg",
+    ".kokoro/presubmit/node10/lint.cfg",
+    ".kokoro/presubmit/node10/samples-test.cfg",
+    ".kokoro/presubmit/node10/system-test.cfg",
+    ".kokoro/presubmit/node10/test.cfg",
+    ".kokoro/presubmit/node12/common.cfg",
+    ".kokoro/presubmit/node12/test.cfg",
+    ".kokoro/presubmit/node8/common.cfg",
+    ".kokoro/presubmit/node8/test.cfg",
+    ".kokoro/presubmit/windows/common.cfg",
+    ".kokoro/presubmit/windows/test.cfg",
+    ".kokoro/publish.sh",
+    ".kokoro/release/docs.cfg",
+    ".kokoro/release/docs.sh",
+    ".kokoro/release/publish.cfg",
+    ".kokoro/samples-test.sh",
+    ".kokoro/system-test.sh",
+    ".kokoro/test.bat",
+    ".kokoro/test.sh",
+    ".kokoro/trampoline.sh",
+    ".mocharc.js",
+    ".nycrc",
+    ".prettierignore",
+    ".prettierrc.js",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "renovate.json",
+    "samples/README.md"
   ]
 }
