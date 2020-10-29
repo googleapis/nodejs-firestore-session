@@ -11,13 +11,14 @@
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "b10590a4a1568548dd13cfcea9aa11d40898144b"
+        "sha": "dc9caca650c77b7039e2bbc3339ffb34ae78e5b7"
       }
     }
   ],
   "generatedFiles": [
     ".eslintignore",
     ".eslintrc.json",
+    ".gitattributes",
     ".github/ISSUE_TEMPLATE/bug_report.md",
     ".github/ISSUE_TEMPLATE/feature_request.md",
     ".github/ISSUE_TEMPLATE/support_request.md",
@@ -25,6 +26,7 @@
     ".github/publish.yml",
     ".github/release-please.yml",
     ".github/workflows/ci.yaml",
+    ".kokoro/.gitattributes",
     ".kokoro/common.cfg",
     ".kokoro/continuous/node10/common.cfg",
     ".kokoro/continuous/node10/docs.cfg",
