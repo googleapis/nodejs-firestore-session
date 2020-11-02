@@ -4,6 +4,25 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+## [2.0.0](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.6...v2.0.0) (2020-10-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update dependency @google-cloud/firestore to v4 (#136)
+* drop node8 (#121)
+
+### Bug Fixes
+
+* **deps:** update dependency @google-cloud/firestore to v4 ([#136](https://www.github.com/googleapis/nodejs-firestore-session/issues/136)) ([378ab11](https://www.github.com/googleapis/nodejs-firestore-session/commit/378ab112f1d67525897c7331cdae8d3c1452ea09))
+* apache license URL ([#468](https://www.github.com/googleapis/nodejs-firestore-session/issues/468)) ([#116](https://www.github.com/googleapis/nodejs-firestore-session/issues/116)) ([97470bf](https://www.github.com/googleapis/nodejs-firestore-session/commit/97470bf0e6811b608a64a0fae732c5d846887a9f))
+* correctly pass firestoreStore constructor parameters ([#128](https://www.github.com/googleapis/nodejs-firestore-session/issues/128)) ([6358034](https://www.github.com/googleapis/nodejs-firestore-session/commit/63580348838622f4d9420089bc298b4f382466d2))
+
+
+### Build System
+
+* drop node8 ([#121](https://www.github.com/googleapis/nodejs-firestore-session/issues/121)) ([88834e2](https://www.github.com/googleapis/nodejs-firestore-session/commit/88834e2cc5d4189ca893f6bb387a50df2314922d))
+
 ### [1.0.6](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.5...v1.0.6) (2019-12-31)
 
 
