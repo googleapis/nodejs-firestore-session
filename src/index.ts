@@ -24,8 +24,7 @@ export class FirestoreStore extends Store {
   db: Firestore;
   kind: string;
   constructor(options: StoreOptions) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    super((options || {}) as any);
+    super();
     this.db = options.dataset;
     if (!this.db) {
       throw new Error('No dataset provided to Firestore Session.');
