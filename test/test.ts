@@ -17,6 +17,7 @@ import * as assert from 'assert';
 import {describe, it} from 'mocha';
 
 import {FirestoreStore} from '../src/index';
+import {SessionData} from 'express-session';
 
 describe('firestore session', () => {
   it('should throw without dataset', done => {
@@ -96,7 +97,7 @@ describe('firestore session', () => {
     });
 
     const expectedSid = 'sid';
-    store.set(expectedSid, {} as Express.SessionData, assert.ifError);
+    store.set(expectedSid, {} as SessionData, assert.ifError);
   });
 
   it('should destroy a document', done => {
