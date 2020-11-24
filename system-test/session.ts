@@ -16,6 +16,7 @@ import {Firestore} from '@google-cloud/firestore';
 import * as assert from 'assert';
 import {describe, it} from 'mocha';
 import {FirestoreStore} from '../src';
+import {SessionData} from 'express-session';
 
 const store = new FirestoreStore({
   dataset: new Firestore(),
@@ -31,7 +32,7 @@ describe('system tests', () => {
   });
 
   it('Should create and retrieve a session', done => {
-    const sessionData = ({foo: 'bar'} as {}) as Express.SessionData;
+    const sessionData = ({foo: 'bar'} as {}) as SessionData;
     store.set('123', sessionData, err => {
       assert.ifError(err);
       store.get('123', (err, session) => {

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import {Firestore} from '@google-cloud/firestore';
-import {Store} from 'express-session';
+import {Store, SessionData} from 'express-session';
 
 export interface StoreOptions {
   dataset: Firestore;
@@ -24,7 +24,7 @@ export class FirestoreStore extends Store {
   db: Firestore;
   kind: string;
   constructor(options: StoreOptions) {
-    super(options || {});
+    super();
     this.db = options.dataset;
     if (!this.db) {
       throw new Error('No dataset provided to Firestore Session.');
@@ -34,7 +34,7 @@ export class FirestoreStore extends Store {
 
   get = (
     sid: string,
-    callback: (err?: Error | null, session?: Express.SessionData) => void
+    callback: (err?: Error | null, session?: SessionData) => void
   ) => {
     this.db
       .collection(this.kind)
@@ -56,7 +56,7 @@ export class FirestoreStore extends Store {
 
   set = (
     sid: string,
-    session: Express.SessionData,
+    session: SessionData,
     callback?: (err?: Error) => void
   ) => {
     callback = callback || (() => {});
