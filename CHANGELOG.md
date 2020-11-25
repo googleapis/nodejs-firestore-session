@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+### [2.0.1](https://www.github.com/googleapis/nodejs-firestore-session/compare/v2.0.0...v2.0.1) (2020-11-25)
+
+
+### Bug Fixes
+
+* **types:** patch in express type removed SessionData ([#149](https://www.github.com/googleapis/nodejs-firestore-session/issues/149)) ([3ebae6a](https://www.github.com/googleapis/nodejs-firestore-session/commit/3ebae6a0a7b07dc721dd3d70611e7c93eb2b19f4))
+
 ## [2.0.0](https://www.github.com/googleapis/nodejs-firestore-session/compare/v1.0.6...v2.0.0) (2020-10-29)
 
 
