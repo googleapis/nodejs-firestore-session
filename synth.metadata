@@ -4,14 +4,14 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/nodejs-firestore-session.git",
-        "sha": "843ef076ff429b794b2963f436e4e4e37b7498b1"
+        "sha": "8b239f538793b1fb4bdbc02cd9b172c1be55c2a5"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "c6706ee5d693e9ae5967614170732646590d8374"
+        "sha": "04573fd73f56791c659832aa84d35a4ec860d6f7"
       }
     }
   ]
