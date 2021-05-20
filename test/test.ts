@@ -27,12 +27,12 @@ describe('firestore session', () => {
   });
 
   it('should use the default kind', done => {
-    const fakeDataset = ({
+    const fakeDataset = {
       collection: (kind: string) => {
         assert.strictEqual(kind, 'Session');
         done();
       },
-    } as {}) as Firestore;
+    } as {} as Firestore;
     const store = new FirestoreStore({dataset: fakeDataset});
     store.get('', assert.ifError);
   });
@@ -53,7 +53,7 @@ describe('firestore session', () => {
   });
 
   it('should get a document', done => {
-    const fakeDataset = ({
+    const fakeDataset = {
       collection: (kind: string) => {
         assert.strictEqual(kind, 'Session');
         return fakeDataset;
@@ -65,7 +65,7 @@ describe('firestore session', () => {
       get: () => {
         done();
       },
-    } as {}) as Firestore;
+    } as {} as Firestore;
 
     const store = new FirestoreStore({
       dataset: fakeDataset,
@@ -78,7 +78,7 @@ describe('firestore session', () => {
   });
 
   it('should set a document', done => {
-    const fakeDataset = ({
+    const fakeDataset = {
       collection: (kind: string) => {
         assert.strictEqual(kind, 'Session');
         return fakeDataset;
@@ -90,7 +90,7 @@ describe('firestore session', () => {
       set: () => {
         done();
       },
-    } as {}) as Firestore;
+    } as {} as Firestore;
 
     const store = new FirestoreStore({
       dataset: fakeDataset,
@@ -101,7 +101,7 @@ describe('firestore session', () => {
   });
 
   it('should destroy a document', done => {
-    const fakeDataset = ({
+    const fakeDataset = {
       collection: (kind: string) => {
         assert.strictEqual(kind, 'Session');
         return fakeDataset;
@@ -113,7 +113,7 @@ describe('firestore session', () => {
       delete: () => {
         done();
       },
-    } as {}) as Firestore;
+    } as {} as Firestore;
 
     const store = new FirestoreStore({
       dataset: fakeDataset,
