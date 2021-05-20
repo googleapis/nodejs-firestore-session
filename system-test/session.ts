@@ -32,7 +32,7 @@ describe('system tests', () => {
   });
 
   it('Should create and retrieve a session', done => {
-    const sessionData = ({foo: 'bar'} as {}) as SessionData;
+    const sessionData = {foo: 'bar'} as {} as SessionData;
     store.set('123', sessionData, err => {
       assert.ifError(err);
       store.get('123', (err, session) => {
