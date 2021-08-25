@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+### [2.0.2](https://www.github.com/googleapis/nodejs-firestore-session/compare/v2.0.1...v2.0.2) (2021-08-25)
+
+
+### Bug Fixes
+
+* **build:** migrate to using main branch ([#179](https://www.github.com/googleapis/nodejs-firestore-session/issues/179)) ([58d6be4](https://www.github.com/googleapis/nodejs-firestore-session/commit/58d6be4d02ad7b0e35e62592fb1855dfa40e73b9))
+
 ### [2.0.1](https://www.github.com/googleapis/nodejs-firestore-session/compare/v2.0.0...v2.0.1) (2020-11-25)
 
 
