@@ -11,6 +11,5 @@
   "api_id": "firestore.googleapis.com",
   "requires_billing": false,
   "codeowner_team": "@googleapis/firestore-dpe",
-  "api_shortname": "firestore-session",
-  "library_type": "GAPIC_AUTO"
+  "library_type": "OTHER"
 }
