@@ -49,7 +49,7 @@ export class FirestoreStore extends Store {
           const result = JSON.parse(doc.data()!.data);
           return callback(null, result);
         } catch (err) {
-          return callback(err);
+          return callback(err as Error);
         }
       }, callback);
   };
@@ -65,7 +65,7 @@ export class FirestoreStore extends Store {
     try {
       sessJson = JSON.stringify(session);
     } catch (err) {
-      return callback(err);
+      return callback(err as Error);
     }
 
     this.db
