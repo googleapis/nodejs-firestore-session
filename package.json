@@ -14,7 +14,7 @@
   ],
   "repository": "googleapis/nodejs-firestore-session",
   "peerDependencies": {
-    "@google-cloud/firestore": "^4.0.0"
+    "@google-cloud/firestore": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/googleapis/nodejs-firestore-session/issues"
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.9",
-    "@google-cloud/firestore": "^4.0.0",
+    "@google-cloud/firestore": "^5.0.0",
     "@types/express-session": "^1.17.3",
     "@types/mocha": "^9.0.0",
     "c8": "^7.0.0",
