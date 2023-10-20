@@ -14,6 +14,6 @@
 import synthtool.languages.node as node
 
 node.owlbot_main(templates_excludes=[
-  ".kokoro/continuous/node12/common.cfg",
-  ".kokoro/presubmit/node12/common.cfg"
+  ".kokoro/continuous/node14/common.cfg",
+  ".kokoro/presubmit/node14/common.cfg"
 ])
