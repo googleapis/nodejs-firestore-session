@@ -14,7 +14,7 @@
   ],
   "repository": "googleapis/nodejs-firestore-session",
   "peerDependencies": {
-    "@google-cloud/firestore": "^6.0.0"
+    "@google-cloud/firestore": "^7.1.0"
   },
   "bugs": {
     "url": "https://github.com/googleapis/nodejs-firestore-session/issues"
