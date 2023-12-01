@@ -1,4 +1,6 @@
-# Copyright 2021 Google LLC
+#!/bin/bash
+
+# Copyright 2019 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,9 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-import synthtool.languages.node as node
 
-node.owlbot_main(templates_excludes=[
-  ".kokoro"],
-  staging_excludes=[".kokoro"],
-)
+export GCLOUD_PROJECT=java-review
+export GOOGLE_APPLICATION_CREDENTIALS=${KOKORO_GFILE_DIR}/secret_manager/java-review_firestore-nodejs-it-6d41b624fec9
