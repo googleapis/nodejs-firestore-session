@@ -48,5 +48,8 @@
     "linkinator": "^4.0.0",
     "mocha": "^9.2.2",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/node": "^20.10.2"
   }
 }
