@@ -1,20 +1,20 @@
 {
   "name": "@google-cloud/connect-firestore",
   "description": "Google Cloud Firestore session store for Express/Connect",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "license": "Apache-2.0",
   "author": "Google Inc.",
   "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "files": [
     "build/src"
   ],
   "repository": "googleapis/nodejs-firestore-session",
   "peerDependencies": {
-    "@google-cloud/firestore": "^6.0.0"
+    "@google-cloud/firestore": "^7.1.0"
   },
   "bugs": {
     "url": "https://github.com/googleapis/nodejs-firestore-session/issues"
@@ -23,7 +23,7 @@
     "lint": "gts check",
     "samples-test": "cd samples/ && npm link ../ && npm test && cd ../",
     "presystem-test": "npm run compile",
-    "system-test": "mocha build/system-test -t 10000",
+    "system-test": "mocha build/system-test -t 100000",
     "docs": "compodoc src/",
     "test": "c8 mocha build/test",
     "fix": "gts fix",
@@ -38,15 +38,15 @@
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.9",
-    "@google-cloud/firestore": "^6.0.0",
+    "@google-cloud/firestore": "^7.1.0",
     "@types/express-session": "^1.17.3",
     "@types/mocha": "^9.0.0",
-    "c8": "^7.0.0",
+    "c8": "^8.0.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "gts": "^3.1.0",
+    "gts": "^5.2.0",
     "linkinator": "^4.0.0",
     "mocha": "^9.2.2",
-    "typescript": "^4.6.4"
+    "typescript": "^5.2.2"
   }
 }
