@@ -14,6 +14,6 @@
 import synthtool.languages.node as node
 
 node.owlbot_main(templates_excludes=[
-  ".kokoro"],
-  staging_excludes=[".kokoro"],
+  ".kokoro/"],
+  staging_excludes=[".kokoro/"],
 )
