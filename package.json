@@ -1,7 +1,7 @@
 {
   "name": "@google-cloud/connect-firestore",
   "description": "Google Cloud Firestore session store for Express/Connect",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "license": "Apache-2.0",
   "author": "Google Inc.",
   "main": "./build/src/index.js",
