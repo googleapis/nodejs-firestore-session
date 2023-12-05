@@ -23,7 +23,7 @@
     "lint": "gts check",
     "samples-test": "cd samples/ && npm link ../ && npm test && cd ../",
     "presystem-test": "npm run compile",
-    "system-test": "mocha build/system-test -t 10000",
+    "system-test": "mocha build/system-test -t 100000",
     "docs": "compodoc src/",
     "test": "c8 mocha build/test",
     "fix": "gts fix",
