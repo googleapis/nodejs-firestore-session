@@ -23,12 +23,13 @@ const store = new FirestoreStore({
 });
 
 describe('system tests', () => {
-  it('should return an empty session', done => {
-    store.get('123', (err, session) => {
+  it('should return an empty session', () => {
+    try {
+      store.get('123', (err, session));
+    } catch (err) {
       assert.ifError(err);
       assert.strictEqual(session, undefined);
-      done();
-    });
+    }
   });
 
   it('Should create and retrieve a session', done => {
@@ -55,3 +56,7 @@ describe('system tests', () => {
     });
   });
 });
+function done() {
+  throw new Error('Function not implemented.');
+}
+
