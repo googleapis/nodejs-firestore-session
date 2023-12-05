@@ -13,7 +13,6 @@
 # limitations under the License.
 import synthtool.languages.node as node
 
-node.owlbot_main(templates_excludes=[
-  ".kokoro/continuous/node12/common.cfg",
-  ".kokoro/presubmit/node12/common.cfg"
-])
+node.owlbot_main(templates_excludes=[".kokoro/presubmit/node14/system-test.cfg", ".kokoro/presubmit/node14/samples-test.cfg", ".kokoro/continuous/node14/samples-test.cfg", ".kokoro/continous/node14/system-test.cfg"],
+  staging_excludes=[".kokoro/presubmit/node14/system-test.cfg", ".kokoro/presubmit/node14/samples-test.cfg", ".kokoro/continuous/node14/samples-test.cfg", ".kokoro/continous/node14/system-test.cfg"],
+)
