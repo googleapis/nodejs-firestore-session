@@ -4,6 +4,30 @@
 
 [1]: https://www.npmjs.com/package/@google-cloud/connect-firestore?activeTab=versions
 
+## [3.0.0](https://github.com/googleapis/nodejs-firestore-session/compare/v2.0.2...v3.0.0) (2023-12-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Node 14 ([#245](https://github.com/googleapis/nodejs-firestore-session/issues/245))
+* update library to use Node 12 ([#213](https://github.com/googleapis/nodejs-firestore-session/issues/213))
+
+### Bug Fixes
+
+* **deps:** Update dependency @google-cloud/firestore to v5 ([#187](https://github.com/googleapis/nodejs-firestore-session/issues/187)) ([8f97b88](https://github.com/googleapis/nodejs-firestore-session/commit/8f97b888fd4710c716f53aa2bd8520f45c90ce22))
+* **deps:** Update dependency @google-cloud/firestore to v6 ([#217](https://github.com/googleapis/nodejs-firestore-session/issues/217)) ([ec2d254](https://github.com/googleapis/nodejs-firestore-session/commit/ec2d254533b9521ea7e5b4df12717b2a0112ee00))
+* Remove pip install statements ([#1546](https://github.com/googleapis/nodejs-firestore-session/issues/1546)) ([#219](https://github.com/googleapis/nodejs-firestore-session/issues/219)) ([11d0c90](https://github.com/googleapis/nodejs-firestore-session/commit/11d0c90057c2103819f1ddafad630a59631c2b50))
+
+
+### Miscellaneous Chores
+
+* Upgrade to Node 14 ([#245](https://github.com/googleapis/nodejs-firestore-session/issues/245)) ([81dc99b](https://github.com/googleapis/nodejs-firestore-session/commit/81dc99b4589fcaab33c3c5f8a6e3e127def99ca6))
+
+
+### Build System
+
+* Update library to use Node 12 ([#213](https://github.com/googleapis/nodejs-firestore-session/issues/213)) ([840b225](https://github.com/googleapis/nodejs-firestore-session/commit/840b2258b275b7270ac6a87345fd1b42ee030813))
+
 ### [2.0.2](https://www.github.com/googleapis/nodejs-firestore-session/compare/v2.0.1...v2.0.2) (2021-08-25)
 
 
