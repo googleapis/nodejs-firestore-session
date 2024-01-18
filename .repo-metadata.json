@@ -10,6 +10,5 @@
   "distribution_name": "@google-cloud/connect-firestore",
   "api_id": "firestore.googleapis.com",
   "requires_billing": false,
-  "codeowner_team": "@googleapis/firestore-dpe",
   "library_type": "OTHER"
 }
