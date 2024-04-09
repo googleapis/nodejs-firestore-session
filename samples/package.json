@@ -14,14 +14,14 @@
     "test": "mocha --timeout 10000"
   },
   "dependencies": {
-    "@google-cloud/connect-firestore": "^2.0.2",
+    "@google-cloud/connect-firestore": "^3.0.0",
     "@google-cloud/firestore": "^6.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "gaxios": "^4.0.0",
+    "gaxios": "^6.1.1",
     "mocha": "^8.0.0"
   }
 }
