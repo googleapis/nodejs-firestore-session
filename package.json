@@ -37,7 +37,7 @@
     "precompile": "gts clean"
   },
   "devDependencies": {
-    "@compodoc/compodoc": "^1.1.9",
+    "@compodoc/compodoc": "1.1.19",
     "@google-cloud/firestore": "^7.1.0",
     "@types/express-session": "^1.17.3",
     "@types/mocha": "^9.0.0",
@@ -45,7 +45,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "gts": "^5.2.0",
-    "linkinator": "^4.0.0",
+    "linkinator": "3.0.0",
     "mocha": "^9.2.2",
     "typescript": "^5.2.2"
   }
