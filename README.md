@@ -13,8 +13,6 @@
 
 **_THIS REPOSITORY AND PACKAGE WILL BE DEPRECATED IN JULY 2024_**
 
-Node.js implementation of rcloadenv. Wraps execution of a given command and loads variables from the Google Cloud Runtime Config API into that process.
-> An [express](http://expressjs.com/) session store backed by [Google Cloud Firestore][product-docs].
 
 **@google-cloud/connect-firestore** is an [express](http://expressjs.com/)
 session store backed by [Google Cloud Firestore][product-docs].
