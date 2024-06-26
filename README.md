@@ -13,6 +13,7 @@
 
 **_THIS REPOSITORY AND PACKAGE WILL BE DEPRECATED IN JULY 2024_**
 
+> An [express](http://expressjs.com/) session store backed by [Google Cloud Firestore][product-docs].
 
 **@google-cloud/connect-firestore** is an [express](http://expressjs.com/)
 session store backed by [Google Cloud Firestore][product-docs].
